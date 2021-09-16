@@ -17,7 +17,7 @@ class Add extends Component {
   };
   addtodb = () => {
     fetch(
-      `http://drop-and-drag.herokuapp.com/add/?alphabet=${this.state.alphabet}&integer=${this.state.value}`
+      `https://drop-and-drag.herokuapp.com/add/?alphabet=${this.state.alphabet}&integer=${this.state.value}`
     ).then((data) => {
       if (data) {
         alert("added");

@@ -193,9 +193,8 @@ class App extends Component {
             onChange={this.onIntegerChange}
             onDragStart={this.dragStart}
             onDragOver={this.onDragOver}
-            onClick={this.onDoubleClick}
           >
-            <input placeholder="ADD INTEGER" disabled={true}></input>
+            <input placeholder="ADD INTEGER"></input>
           </div>
         </div>
 
