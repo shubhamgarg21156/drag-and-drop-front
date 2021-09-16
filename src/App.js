@@ -54,21 +54,22 @@ class App extends Component {
     e.target.disabled = false;
   };
   startSearch = () => {
-    fetch(
-      `https://drop-and-drag.herokuapp.com/find/?integer=${
-        this.state.integer
-      }&alphabet=${
-        this.state.alphabet
-      }&operator=${this.state.operator.substring(1, 3)}`
-    ).then((data) => {
-      console.log(data);
-      // this.setState({
-      //   ans: data.data,
-      // });
-      // for (let i = 0; i < data.data.length; i++) {
-      //   console.log(data.data[i].alphabet, data.data[i].value);
-      // }
-    });
+    axios
+      .get(
+        `https://drop-and-drag.herokuapp.com/find/?integer=${
+          this.state.integer
+        }&alphabet=${
+          this.state.alphabet
+        }&operator=${this.state.operator.substring(1, 3)}`
+      )
+      .then((data) => {
+        this.setState({
+          ans: data.data,
+        });
+        for (let i = 0; i < data.data.length; i++) {
+          console.log(data.data[i].alphabet, data.data[i].value);
+        }
+      });
   };
 
   onIntegerChange = (e) => {
