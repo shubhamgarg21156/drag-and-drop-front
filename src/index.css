@@ -1,13 +1,190 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%; */
+}
+.upper-div {
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 300px;
+  /* margin-top: 200px; */
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.upper-div:hover {
+  background-color: cornflowerblue;
+}
+
+.upper-div div {
+  width: 20%;
+  height: 70%;
+  border: 2px solid gray;
+  font-size: 700%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upper-div div:hover {
+  background-color: darkorange;
+}
+
+.lower-div div:hover {
+  background-color: darkgray;
+}
+.upper-div #integer input {
+  background-color: cornflowerblue;
+}
+.lower-div #integer input {
+  background-color: darkgray;
+}
+
+#integer input {
+  height: 80%;
+  border: none;
+  /* background-color: cornflowerblue; */
+  box-sizing: border-box;
+  font-size: 20px;
+}
+#integer input::-moz-focus-inner {
+  border: none;
+}
+#integer input:hover {
+  background-color: darkorange;
+}
+.lower-div {
+  margin-top: 100px;
+  height: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: darkgray;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.lower-div div {
+  width: 20%;
+  height: 70%;
+  border: 2px solid gray;
+  font-size: 700%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lower-div div:hover {
+  background-color: darkorange;
+}
+
+.search-box {
+  height: 100px;
+  width: 70%;
+  border: 2px solid black;
+  /* margin-top: 50px; */
+  margin: 50px auto;
+  font-size: 200%;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+.search-box:hover {
+  background-color: white;
+  color: black;
+}
+
+.answer {
+  width: 70%;
+  height: auto;
+  background-color: blueviolet;
+  margin: 10px auto;
+  padding: 10px;
+}
+.answer ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+.answer div {
+  width: 70%;
+  background-color: red;
+  padding: 30px;
+  text-align: center;
+  margin: 40px auto;
+  font-size: 50px;
+}
+.answer ul li {
+  font-size: 200%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer ul li span {
+  height: 40px;
+  width: 40%;
+  padding: 20px;
+  background-color: cadetblue;
+}
+
+.add-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 80px;
+}
+
+.add-container-div-1 {
+  display: flex;
+  width: 1000px;
+  border: 2px solid black;
+  background-color: blue;
+  height: 100%;
+}
+
+.add-container-div-1 div {
+  display: flex;
+  padding: 10px;
+  border: 2px solid gold;
+  width: 50%;
+}
+.add-container-div-1 div span {
+  font-size: 20px;
+  padding: 30px;
+  width: 50%;
+}
+.add-container-div-1 div input {
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  /* padding: 1px; */
+}
+.add-container-div-2 {
+  height: 100%;
+}
+.add-container-div-2 button {
+  height: 100%;
+  font-size: 20px;
+  padding: 20px;
+  color: gold;
+  background-color: blueviolet;
+  border: 8px solid black;
+  cursor: pointer;
 }
